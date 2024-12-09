@@ -1,0 +1,80 @@
+{
+    "articles": [
+      {
+        "title": "Understanding Hinduism",
+        "introduction": "Hinduism is one of the oldest religions in the world. Today, Hinduism has become the third-largest religion worldwide with more than 1 billion followers. Most Hindus, roughly 94 percent, live in India. Encompassing a range of beliefs and practices, Hinduism is unique in the large number of gods and scriptures followers worship. Hindus practice a wide variety of traditions and celebrate various holidays throughout the year; however, it is important to note that traditions and customs can vary from one Hindu community to another.",
+        "festivals": [
+          {
+            "name": "Diwali",
+            "description": "Diwali, or Dipawali, is one of the biggest and most important holidays celebrated in India. It usually falls in October or November, and the celebrations last for 5 days. The festival gets its name from the row (avali) of clay lamps (deepa) that Indians light outside their homes to symbolize the inner light that protects from spiritual darkness.",
+            "more_details": "More details about Diwali in Appendix 1 (p.98)."
+          },
+          {
+            "name": "Holi",
+            "description": "Holi is a festival to celebrate the arrival of spring and the end of winter. It symbolizes the triumph of good over evil. It is celebrated in March, corresponding to the Hindu calendar month of Phalguna. People throw coloured powder and water balloons at one another to mark such a joyous occasion."
+          }
+        ],
+        "workplace_implications": {
+          "leave_applications": {
+            "description": "It is a common practice for multicultural employees to take multiple vacation days, or an extended leave of absence, for important festivals like Diwali. Some of them choose to return home for family reunions, just like how Chinese celebrate Lunar New Year.",
+            "recommendation": "Inclusive employers should consider offering greater flexibility for leave requests and work arrangements. At the same time, both inclusive employers and multicultural employees should have an open dialogue about it. This discussion is best initiated during the pre-employment stage for mutual understanding and expectations alignment."
+          },
+          "dietary_concerns": {
+            "description": "It is worth noting that Hindus may not eat beef, as cows are considered sacred in the religion.",
+            "recommendation": "Inclusive employers and other members of the organisation should always check with multicultural employees in terms of dietary restrictions when arranging a welcome lunch or other team/company-wide gatherings."
+          },
+          "henna_art": {
+            "description": "Henna are not tattoos. It is a temporary dye which sits on the skin’s surface. It is a common art form being practised in celebration of special occasions such as weddings and birthdays.",
+            "note": "Apart from India, Henna art is also practised by other cultures in Pakistan, some African countries, the Middle East, and some other parts of the world.",
+            "more_details": "More details about Henna in Appendix 1 (p.101)."
+          }
+        }
+      },
+      {
+        "title": "Understanding Islam",
+        "introduction": "Islam is the second-largest religion in the world after Christianity with about 1.8 billion followers (commonly referred to as Muslims) worldwide. It is a monotheistic faith that worships only one god, Allah. It is widely practised in the Middle East, North Africa as well as many South and Southeast Asian countries.",
+        "festivals": [
+          {
+            "name": "Ramadan",
+            "description": "Ramadan is one of the holiest months in the Islamic calendar. Ramadan falls in a different period every year, due to cycles of the moon. Symbolising dedication, reflection, and discipline, Ramadan is a spiritual time during which Muslims get together with family and the wider community. Muslims practise fasting and restrain to plead for forgiveness of sins as well as to express solidarity with the poor and needy.",
+            "more_details": "More details about Ramadan in Appendix 1 (p.98)."
+          }
+        ],
+        "workplace_implications": {
+          "religious_practices": {
+            "description": "During Ramadan, Muslims devote significant time to praying and acts of charity, striving to improve their self-discipline, motivated by hadith.",
+            "recommendation": "Inclusive employers should seek to provide relevant accommodations for Muslim employees, for instance, by designating a prayer room and being open to flexible work schedules. Muslim employees may not eat during the regular lunch hour and might have to pray at different times of the day, so these accommodations would be highly appreciated."
+          },
+          "halal_food": {
+            "description": "In Muslim culture, Halal is an Arabic term meaning 'lawful or permissible'. It does not only cover food and drink, but also many other aspects of daily life. All vegetables and fruits are naturally Halal. Certain meats and dairy products, if slaughtered in the manner of dhabihah (specific method of slaughtering animals in Islamic dietary laws) and processed in a certain way, can be made Halal. In general, pork and alcohol are strictly not permitted under religious laws, regardless of the way they are prepared.",
+            "more_details": "More details about Halal Food in Appendix 1 (p.100)."
+          },
+          "apparel_concerns": {
+            "description": "Hijab is a type of garment worn by some Muslim women to cover their hair. Whether a woman wears hijab depends on interpretations of Islamic law, geographic location and civil law of different cultures as well as personal choice.",
+            "note": "Hijab is not to be confused with Sari/Saree, which is the main outer garment worn by many women in South Asia.",
+            "recommendation": "Inclusive employers should respect the apparel choice of multicultural employees as it is an important part of their culture. If there are any occasions where a certain kind of dress code or uniform is preferred, inclusive employers should communicate expectations and initiate discussions with multicultural employees as early as possible."
+          }
+        }
+      },
+      {
+        "title": "Understanding Sikhism",
+        "introduction": "Sikhism is both a monotheistic and panentheistic religion, advocating the belief in one universal god, commonly represented by the symbol Ik Onkar. It is the world’s fifth-largest religion with more than 25 million followers around the world. The Sikh tradition is a relatively young tradition, dating back to around 500 years ago in the Punjab region of the Indian subcontinent.",
+        "festivals": [
+          {
+            "name": "Gurpurbs",
+            "description": "Gurpurbs is a celebration of the anniversary of births or deaths of Gurus, spiritual masters of the religion. While the exact dates vary depending on the religious calendar, each celebration usually lasts for three days.",
+            "more_details": "More details about Gurpurbs in Appendix 1(p.99)."
+          }
+        ],
+        "workplace_implications": {
+          "dietary_concerns": {
+            "description": "Sikhs do not consume alcohol or smoke. Some of them also choose not to consume meat and animal products such as eggs."
+          },
+          "apparel_concerns": {
+            "description": "Turban, a long piece of cloth that is wrapped round the head, is worn by Sikh men as well as some men practising Islam or Hinduism. There are certain jobs where a Turban might not be allowed due to safety reasons, or because a uniform is required, such as the Hong Kong Disciplined Services.",
+            "recommendation": "It is important for both multicultural employees and inclusive employers to communicate expectations for all relevant requirements of the job during the pre-employment period."
+          }
+        }
+      }
+    ]
+  }
