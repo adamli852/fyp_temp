@@ -30,6 +30,24 @@ body {font-family: "Lato", sans-serif}
   
   <a href="/information.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Topic</a>
 </div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="/ai_gen_image3.jpg" style="width:100%; height:30%">
+ 
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="/ai_gen_image.jpg" style="width:100%; height:30%">
+  
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="/ai_gen_image2.jpg" style="width:100%; height:30%">
+  
+</div>
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <h2 class="w3-wide">Choose Your topic</h2>
+  <p class="w3-justify">In this page, you can select a religion that you would like to learn and understanding thier tradition. Hopethis would help you to understanding more about different culture.</p>
+ 
+</div>
 
 <div class="w3-container w3-content w3-center w3-black w3-padding-64" style="margin: 8dvb;" id="band">
     <h3><a href="/temp.html">topic 1 - Understanding Hinduism</a></h3>
@@ -49,6 +67,22 @@ body {font-family: "Lato", sans-serif}
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
+  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
 </script>
 
