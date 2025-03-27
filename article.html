@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Major Religions</title>
+    <meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+          
+          </div>
+          <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+      
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
+            <video controls>
+            <source src="Hinduism.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2 id="topic-title"></h2>
+            <p id="topic-introduction"></p>
+            <h3>Festivals</h3>
+            <ul id="festival-list"></ul>
+        </div>
+        <a class="btn btn-secondary secondary-btn" href="information.html">Home</a>
+    </div>
+
+    <script>
+        let articles = [];
+
+        fetch('info.json')
+            .then(response => response.json())
+            .then(data => {
+                articles = data.articles;
+                displayTopic(0);
+            });
+
+        let currentIndex = 0;
+
+        function displayTopic(index) {
+            const article = articles[index];
+            document.getElementById("topic-title").innerText = article.title;
+            document.getElementById("topic-introduction").innerText = article.introduction;
+
+            const festivalList = document.getElementById("festival-list");
+            festivalList.innerHTML = ''; // Clear the list
+
+            article.festivals.forEach(festival => {
+                const listItem = document.createElement("li");
+                listItem.innerText = festival.name + ": " + festival.description;
+                festivalList.appendChild(listItem);
+            });
+
+            document.getElementById("prev-btn").disabled = index === 0;
+            document.getElementById("next-btn").disabled = index === articles.length - 1;
+        }
+
+        function changeTopic(direction) {
+            currentIndex += direction;
+            displayTopic(currentIndex);
+        }
+        function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+    </script>
+
+</body>
+</html>
