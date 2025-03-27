@@ -18,7 +18,7 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="/index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
@@ -42,6 +42,11 @@ body {font-family: "Lato", sans-serif}
   <img src="/ai_gen_image2.jpg" style="width:100%; height:30%">
   
 </div>
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <audio controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
   <h2 class="w3-wide">Choose Your topic</h2>
@@ -50,13 +55,13 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <div class="w3-container w3-content w3-center w3-black w3-padding-64" style="margin: 8dvb;" id="band">
-    <h3><a href="article.html">topic 1 - Understanding Hinduism</a></h3>
+    <h3><a href="/temp.html">topic 1 - Understanding Hinduism</a></h3>
 </div>
 <div class="w3-container w3-content w3-center w3-black w3-padding-64" style="margin: 8dvb;" id="band">
-    <h3><a href="article.html">topic 2 - Understanding Islam</a></h3>
+    <h3><a href="/temp.html">topic 2 - Understanding Islam</a></h3>
 </div>
 <div class="w3-container w3-content w3-center w3-black w3-padding-64" style="margin: 8dvb;" id="band">
-    <h3><a href="article.html">topic 3 - Understanding Sikhism</a></h3>
+    <h3><a href="/temp.html">topic 3 - Understanding Sikhism</a></h3>
 </div>
 
 <script>
@@ -84,6 +89,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
+
 </script>
 
 </body>

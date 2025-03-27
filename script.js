@@ -1,28 +1,33 @@
 const questions = [
     {
         question: "What are the two major festivals celebrated in Hinduism mentioned in the article?",
-        options: ["Diwali and Holi","Eid and Christmas","Thanksgiving and New Year","Guru Nanak Jayanti and Vaisakhi"],
-        answer: "Diwali and Holi"
+        options: ["Diwali and Holi", "Eid and Christmas", "Thanksgiving and New Year", "Guru Nanak Jayanti and Vaisakhi"],
+        answer: "Diwali and Holi",
+        explanation: "The festivals mentioned are Diwali and Holi. Diwali symbolizes the victory of light over darkness and is celebrated with lamps, while Holi marks the arrival of spring and the triumph of good over evil, celebrated with colored powders."
     },
     {
         question: "During which month do Muslims observe fasting as part of their religious practices?",
-        options: ["Ramadan"," Muharram","Shawwal","Safar"],
-        answer: "Ramadan"
+        options: ["Ramadan", "Muharram", "Shawwal", "Safar"],
+        answer: "Ramadan",
+        explanation: "Ramadan is the ninth month of the Islamic lunar calendar, during which Muslims fast from dawn to sunset."
     },
     {
         question: "What is the purpose of Gurpurbs in Sikhism?",
-        options: ["To celebrate the harvest","To mark the anniversaries of the births or deaths of Gurus","To welcome the New Year","To honor the community service"],
-        answer: "To mark the anniversaries of the births or deaths of Gurus"
+        options: ["To celebrate the harvest", "To mark the anniversaries of the births or deaths of Gurus", "To welcome the New Year", "To honor the community service"],
+        answer: "To mark the anniversaries of the births or deaths of Gurus",
+        explanation: "Gurpurbs commemorate the anniversaries of the births or deaths of the ten Sikh Gurus."
     },
     {
         question: "Sikhs generally avoid which of the following?",
-        options: ["Fish","Alcohol and smoking","Dairy products","Fruits and vegetables" ],
-        answer: "Alcohol and smoking"
+        options: ["Fish", "Alcohol and smoking", "Dairy products", "Fruits and vegetables"],
+        answer: "Alcohol and smoking",
+        explanation: "Sikhs are generally advised to avoid alcohol and smoking."
     },
     {
         question: "What does the turban symbolize in Sikh culture?",
-        options: ["Wealth","Spirituality and identity","Political power","Seasonal change"],
-        answer: "Spirituality and identity"
+        options: ["Wealth", "Spirituality and identity", "Political power", "Seasonal change"],
+        answer: "Spirituality and identity",
+        explanation: "The turban represents spirituality, identity, and equality in Sikh culture."
     }
 ];
 
@@ -33,7 +38,8 @@ const questionElement = document.querySelector('.question');
 const optionsElement = document.querySelector('.options');
 const nextButton = document.querySelector('.next-btn');
 const resetButton = document.querySelector('.reset-btn');
-const resultElement = document.querySelector('.result');
+const explanationBox = document.getElementById('explanationBox');
+const explanationText = document.getElementById('explanationText');
 
 function loadQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
@@ -46,7 +52,8 @@ function loadQuestion() {
         li.addEventListener('click', () => selectOption(option));
         optionsElement.appendChild(li);
     });
-    nextButton.classList.remove('hidden');
+    nextButton.classList.add('d-none');
+    explanationBox.style.display = 'none'; // Hide explanation initially
 }
 
 function selectOption(option) {
@@ -54,20 +61,21 @@ function selectOption(option) {
     if (option === currentQuestion.answer) {
         score++;
     }
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        loadQuestion();
-    } else {
-        showResult();
-    }
+    showExplanation(currentQuestion.explanation);
+    nextButton.classList.remove('d-none'); // Show next button after selection
+}
+
+function showExplanation(explanation) {
+    explanationText.textContent = explanation;
+    explanationBox.style.display = 'block'; // Show explanation box
 }
 
 function showResult() {
     questionElement.style.display = 'none';
     optionsElement.style.display = 'none';
-    nextButton.classList.add('hidden');
-    resetButton.classList.remove('hidden');
-    resultElement.style.display = 'block';
+    nextButton.classList.add('d-none');
+    resetButton.classList.remove('d-none');
+    explanationBox.style.display = 'none'; // Hide explanation box
     resultElement.textContent = `Your score: ${score} out of ${questions.length}`;
 }
 
@@ -77,34 +85,20 @@ function resetGame() {
     resultElement.style.display = 'none';
     questionElement.style.display = 'block';
     optionsElement.style.display = 'block';
-    nextButton.classList.remove('hidden');
-    resetButton.classList.add('hidden');
+    nextButton.classList.add('d-none');
+    resetButton.classList.add('d-none');
     loadQuestion();
 }
 
-nextButton.addEventListener('click', loadQuestion);
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+    } else {
+        showResult();
+    }
+});
+
 resetButton.addEventListener('click', resetGame);
 
 loadQuestion();
-
-function getTopicFromURL() {
-    // Get the URL parameters
-    const params = new URLSearchParams(window.location.search);
-    const topicId = params.get('topic'); // Get the value of the 'topic' parameter
-    return topicId; // Return the topic ID
-}
-
-async function loadTopic() {
-    const topicId = getTopicFromURL(); // Retrieve the topic ID
-
-    // Fetch JSON data
-    const response = await fetch('topics.json');
-    const data = await response.json();
-
-    // Display the relevant topic information
-    const topicInfo = data.topics[topicId - 1]; // Assuming topics are 0-indexed
-    document.getElementById('topicTitle').innerText = topicInfo.title;
-    document.getElementById('topicDescription').innerText = topicInfo.description;
-}
-
-window.onload = loadTopic;

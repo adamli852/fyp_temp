@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "What is the primary significance of Diwali in Hinduism?",
+        "options": {
+          "A": "It marks the arrival of spring.",
+          "B": "It symbolizes the inner light that protects from spiritual darkness.",
+          "C": "It celebrates the triumph of good over evil.",
+          "D": "It is a day of fasting and reflection."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "During which month is Holi typically celebrated?",
+        "options": {
+          "A": "October",
+          "B": "November",
+          "C": "March",
+          "D": "December"
+        },
+        "correctAnswer": "C"
+      },
+      {
+        "question": "What dietary restriction should employers be aware of when accommodating Hindu employees?",
+        "options": {
+          "A": "Avoiding pork.",
+          "B": "Avoiding beef.",
+          "C": "Avoiding gluten.",
+          "D": "Avoiding dairy."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What is Ramadan primarily known for in the Islamic faith?",
+        "options": {
+          "A": "A month of feasting and celebration.",
+          "B": "A month of fasting, prayer, reflection, and community.",
+          "C": "A month dedicated to pilgrimage.",
+          "D": "A month for charitable donations only."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What is the term 'Halal' associated with in Muslim culture?",
+        "options": {
+          "A": "A type of prayer.",
+          "B": "Lawful or permissible practices, especially regarding food.",
+          "C": "A festival celebrated in the spring.",
+          "D": "A traditional garment worn by women."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What is the significance of the hijab in Muslim culture?",
+        "options": {
+          "A": "It is a requirement for all Muslim women.",
+          "B": "It is a garment worn by some Muslim women to cover their hair, reflecting personal choice and cultural interpretation.",
+          "C": "It is a type of food traditionally eaten during Ramadan.",
+          "D": "It is the main outer garment worn by women in South Asia."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What does the symbol 'Ik Onkar' represent in Sikhism?",
+        "options": {
+          "A": "A sacred text.",
+          "B": "A universal god.",
+          "C": "A religious festival.",
+          "D": "A spiritual master."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What is Gurpurbs in Sikhism?",
+        "options": {
+          "A": "A month of fasting.",
+          "B": "A celebration of the Gurus' anniversaries.",
+          "C": "A type of prayer.",
+          "D": "A pilgrimage site."
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "question": "What dietary restrictions do many Sikhs observe?",
+        "options": {
+          "A": "Avoiding all dairy products.",
+          "B": "Avoiding alcohol and smoking.",
+          "C": "Avoiding all grains.",
+          "D": "Avoiding vegetables."
+        },
+        "correctAnswer": "B"
+      }
+    ]
+  }
